@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img {
+    /* min-width: 10%; */
+    max-width: 50%;
+    margin: auto;
+    height: 50vh;
+    background-image: url('../img/planodefundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.4;
+    filter: grayscale(10);
+    
+}
+
+
+header {
+    background-color: rgb(0, 183, 255);
+    padding: 5vh;
+    text-align: center;
+}
+
+section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section menu {
+    background-color: rgba(0, 89, 255, 0.432);
+}
+
+section menu ul {
+    display: block;
+}
+
+section menu ul li {
+    list-style: none;
+    border: 1px solid #eee;
+    text-align: center;
+    padding: 10px;
+}
+
+section menu ul li a {
+    text-decoration: none;
+    color: #020202;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 15px;
+}
+
+@media screen and (min-width: 700px) {
+    section menu ul {
+        display: flex;
+        justify-content: center;
+        border: 0;
+    }
+}
