@@ -8,6 +8,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 #cabecalho {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/altar.jpg');
     background-position: center;
@@ -36,7 +37,7 @@
 }
 
 span {
-    color: rgb(179, 35, 179);
+    color: rgb(158, 13, 13);
 }
 
 #catequista {
@@ -45,17 +46,9 @@ span {
     top: 1em;
 }
 
-#catequista button {
-    padding: 10px 20px;
-    background-color: purple;
-    border: none;
-    border-radius: 10px;
-    color: #fff;
-    cursor: pointer;
-}
 
 #conteudo {
-    background-color: grey;
+    background-color: rgb(5, 130, 247);
     height: 10vh;
     display: flex;
     align-items: center;
@@ -69,8 +62,52 @@ span {
     text-transform: uppercase;
 }
 
+.inscricao {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/mao-com-caneta-sobre-o-formulario-de-inscricao.jpg);
+    width: 300px;
+    height: 300px;
+    background-position: left center;
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 30px;
+}
 
+.link-inscricao {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
 
+.cont-total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-inscricao a {
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+    &:hover {
+        background-color: blue;
+        border: none;
+    }
+}
+
+.link-inscricao a i {
+    margin-right: 5px;
+}
 
 
 
@@ -81,10 +118,13 @@ span {
 @media (max-width: 1000px) {
     #cabecalho {
         flex-direction: column;
-        justify-items: flex-start;
-        background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../img/planodefundo.jpg');
-        background-position: center;
+        /* align-self: flex-start;
+        justify-self: flex-start; */
+        align-content: center;
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/altar_p.jpg');
+        background-position: right center;
         background-repeat: no-repeat;
+     
     }
 
     #titulo_principal {
@@ -94,7 +134,7 @@ span {
 
     #titulo_secundario {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 20px;
         text-align: center;
     }
 
@@ -103,11 +143,17 @@ span {
         font-weight: bolder;
         font-size: 15px;
         text-transform: uppercase;
+        text-align: center;
     }
 
-    #catequista {
-        width: 100%;
-
-   
+    .inscricao  {
+        background: none;
     }
+    
+    .titulo-h2 {
+        display: none;
+    }
+
+
+
 }
