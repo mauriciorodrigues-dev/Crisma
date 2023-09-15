@@ -12,6 +12,7 @@
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/altar.jpg');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 90vh;
     display: flex;
     justify-content: space-around;
@@ -77,12 +78,13 @@ span {
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     #cabecalho {
         flex-direction: column;
         justify-items: flex-start;
         background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../img/planodefundo.jpg');
         background-position: center;
+        background-repeat: no-repeat;
     }
 
     #titulo_principal {
