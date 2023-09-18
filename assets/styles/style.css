@@ -8,9 +8,30 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.918);
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 20px;
+    /* background-color: rgba(0, 0, 0, 0.918); */
+    color: #fff;
+    
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
 
 #cabecalho {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/altar.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../img/altar.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,7 +40,11 @@
     justify-content: space-around;
     align-items: center;
     color: #fff;
-    /* position: relative; */
+    position: relative;
+   
+   
+    
+    
 }
 
 #titulo_principal {
