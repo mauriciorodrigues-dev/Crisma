@@ -5,4 +5,75 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 5vh 75vh 10vh;
+    /* gap: 3px; */
+    background-image: url('../img/altar.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    opacity: .9;
+    
+    
+}
+
+
+#header, #footer, #main, #nav {
+    /* background-color: #ccc; */
+    border: 1px solid;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#footer {
+    
+}
+#main {
+    background-color: #fff;
+    opacity: .8;
+    color: black;
+    display: flex;
+    
+}
+
+#main .informacoes {
+    max-width: 50%;
+    padding: 10px;
+    
+}
+
+#main .informacoes h2 {
+    text-align: center;
+}
+
+#main .informacoes p {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-indent: 1em;
+}
+
+#nav a {
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
