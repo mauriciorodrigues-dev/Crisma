@@ -8,72 +8,56 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 10vh 5vh 75vh 10vh;
-    /* gap: 3px; */
-    background-image: url('../img/altar.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    opacity: .9;
-    
-    
-}
-
-
-#header, #footer, #main, #nav {
-    /* background-color: #ccc; */
-    border: 1px solid;
-}
-
-#header {
+header {
+    background-color: #ccc;
+    height: 10vh; 
     display: flex;
     align-items: center;
     justify-content: center;
     
 }
-#footer {
-    
-}
-#main {
-    background-color: #fff;
-    opacity: .8;
-    color: black;
+
+header .cont-header {
     display: flex;
-    
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
 }
 
-#main .informacoes {
-    max-width: 50%;
-    padding: 10px;
-    
-}
-
-#main .informacoes h2 {
-    text-align: center;
-}
-
-#main .informacoes p {
-    font-size: 1.5em;
-    letter-spacing: 1px;
-    text-align: justify;
-    text-indent: 1em;
-}
-
-#nav a {
-    color: #fff;
-    padding: 20px;
+header .menu {
+    /* display: inline-block; */
+    margin-left: 20px;
     text-decoration: none;
     text-transform: uppercase;
+    color: #066cf1;
+    font-weight: bold;
+    &:hover {
+        opacity: .5;
+    }
 }
-#nav {
+
+.container {
+    background-image: url('../img/cruz.jpg');
+    background-position: center center;    
+    background-size: cover;
+    height: 80vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+.container .frase {
+    font-size: 3em;
+    max-width: 50%;
+    text-align: center;
+    color: #066cf1;
+    text-shadow: 1px 1px 5px ;
+}
+
+
+
+@media (min-width: 1300px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
