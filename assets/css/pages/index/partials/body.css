@@ -1,0 +1,11 @@
+body{
+  background-image: url("../../../../img/pages/index/back-login.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
